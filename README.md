@@ -1,6 +1,6 @@
 
 :smirk_cat::smirk_cat::beer:
-# libai
+# poetry 
 poetry collector
 
 
