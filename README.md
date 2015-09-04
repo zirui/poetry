@@ -13,3 +13,5 @@ poetry collector
 - [ ] scrap poetry from web
   - [ ] 古诗文网
 - [ ] build index
+  - [ ] es
+  - [ ] docker
