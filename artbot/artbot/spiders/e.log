@@ -1,0 +1,526 @@
+2016-06-18 22:02:55,406 - INFO - Scrapy 1.1.0 started (bot: artbot)
+2016-06-18 22:02:55 [scrapy] INFO: Scrapy 1.1.0 started (bot: artbot)
+2016-06-18 22:02:55,406 - INFO - Overridden settings: {'NEWSPIDER_MODULE': 'artbot.spiders', 'SPIDER_MODULES': ['artbot.spiders'], 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'artbot'}
+2016-06-18 22:02:55 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'artbot.spiders', 'SPIDER_MODULES': ['artbot.spiders'], 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'artbot'}
+2016-06-18 22:02:55,496 - INFO - Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-06-18 22:02:55 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-06-18 22:02:55,558 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-06-18 22:02:55 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-06-18 22:02:55,562 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-06-18 22:02:55 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-06-18 22:02:55,563 - INFO - Enabled item pipelines:
+[]
+2016-06-18 22:02:55 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-06-18 22:02:55,563 - INFO - Spider opened
+2016-06-18 22:02:55 [scrapy] INFO: Spider opened
+2016-06-18 22:02:55,570 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-18 22:02:55 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-18 22:02:55,572 - DEBUG - Telnet console listening on 127.0.0.1:6023
+2016-06-18 22:02:55 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-06-18 22:02:56,410 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:02:56 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:02:56,524 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:02:56 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:00,273 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:00 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:00,403 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:00 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:03,164 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:03 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:03,274 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:03 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:07,865 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:07 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:07,974 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:07 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:12,427 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:12 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:12,539 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:12 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:16,431 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:16 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:16,538 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:16 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:20,427 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:20 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:20,546 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:20 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:22,830 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:22 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:22,943 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:22 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:26,924 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:26 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:27,036 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:27 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:30,252 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:30 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:30,371 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:30 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:33,754 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:33 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:33,874 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:33 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:38,036 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:38 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:38,146 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:38 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:40,711 - DEBUG - Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:40 [scrapy] DEBUG: Crawled (200) <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+2016-06-18 22:03:40,833 - ERROR - Spider error processing <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'
+2016-06-18 22:03:40 [scrapy] ERROR: Spider error processing <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (referer: None)
+Traceback (most recent call last):
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/apple/code/poetry/artbot/artbot/spiders/gushiwen_poetry.py", line 68, in parse
+    item['content'] = content
+  File "/Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/item.py", line 63, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'GushiwenItem does not support field: content'

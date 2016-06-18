@@ -1,0 +1,108 @@
+2016-06-19 01:12:31,164 - INFO - Scrapy 1.1.0 started (bot: artbot)
+2016-06-19 01:12:31 [scrapy] INFO: Scrapy 1.1.0 started (bot: artbot)
+2016-06-19 01:12:31,164 - INFO - Overridden settings: {'NEWSPIDER_MODULE': 'artbot.spiders', 'SPIDER_MODULES': ['artbot.spiders'], 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'artbot'}
+2016-06-19 01:12:31 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'artbot.spiders', 'SPIDER_MODULES': ['artbot.spiders'], 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'artbot'}
+2016-06-19 01:12:31,209 - INFO - Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-06-19 01:12:31 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-06-19 01:12:31,211 - WARNING - /Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-06-19 01:12:31 [py.warnings] WARNING: /Users/apple/app/anaconda/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-06-19 01:12:31,245 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'artbot.middlewares.RandomUserAgentMiddleware',
+ 'artbot.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-06-19 01:12:31 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'artbot.middlewares.RandomUserAgentMiddleware',
+ 'artbot.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-06-19 01:12:31,247 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-06-19 01:12:31 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-06-19 01:12:31,248 - INFO - Enabled item pipelines:
+['artbot.pipelines.ArtbotPipeline']
+2016-06-19 01:12:31 [scrapy] INFO: Enabled item pipelines:
+['artbot.pipelines.ArtbotPipeline']
+2016-06-19 01:12:31,248 - INFO - Spider opened
+2016-06-19 01:12:31 [scrapy] INFO: Spider opened
+2016-06-19 01:12:31,265 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:12:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:12:31,267 - DEBUG - Telnet console listening on 127.0.0.1:6023
+2016-06-19 01:12:31 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-06-19 01:13:31,267 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:13:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:14:31,267 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:14:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:14:31,294 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:31 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=1&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:35,220 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:35 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=2&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:38,823 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:38 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=3&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:42,635 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:42 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=4&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:46,423 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:46 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=5&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:50,142 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:50 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=6&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:53,828 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:53 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=7&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:57,141 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:14:57 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=8&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:15:31,266 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:15:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:16:31,267 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:16:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:16:31,302 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:31 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=9&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:35,226 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:35 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=10&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:39,594 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:39 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=11&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:43,333 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:43 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=12&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:47,777 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:47 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=13&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:51,112 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=14&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:51 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=14&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:55,453 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=15&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:55 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=15&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:59,717 - DEBUG - Retrying <GET http://so.gushiwen.org/type.aspx?p=16&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:16:59 [scrapy] DEBUG: Retrying <GET http://so.gushiwen.org/type.aspx?p=16&c=%E5%85%88%E7%A7%A6&x=%E8%AF%97> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-06-19 01:17:31,266 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-19 01:17:31 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)

@@ -8,14 +8,12 @@
 import scrapy
 
 
-class ArtbotItem(scrapy.Item):
-    # define the fields for your item here like:
-    pass
-
-
 class GushiwenItem(scrapy.Item):
     # define the fields for your item here like:
+    atype = scrapy.Field()
     dynasty = scrapy.Field()
-    author = scrapy.Field()
+    xtype = scrapy.Field()
+
     title = scrapy.Field()
-    poetry = scrapy.Field()
+    author = scrapy.Field()
+    content = scrapy.Field()
