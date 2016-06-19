@@ -17,3 +17,4 @@ class GushiwenItem(scrapy.Item):
     title = scrapy.Field()
     author = scrapy.Field()
     content = scrapy.Field()
+    pid = scrapy.Field()

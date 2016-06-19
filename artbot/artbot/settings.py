@@ -44,13 +44,13 @@ USER_AGENT_LIST = [
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY=3
+DOWNLOAD_DELAY=8
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN=16
 #CONCURRENT_REQUESTS_PER_IP=16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED=False
+COOKIES_ENABLED=False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED=False
@@ -76,7 +76,7 @@ DOWNLOAD_DELAY=3
 HTTP_PROXY = 'http://127.0.0.1:8123'
 DOWNLOADER_MIDDLEWARES = {
     'artbot.middlewares.RandomUserAgentMiddleware': 400,
-    'artbot.middlewares.ProxyMiddleware': 410,
+    # 'artbot.middlewares.ProxyMiddleware': 410,
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
     # Disable compression middleware, so the actual HTML pages are cached
 }
